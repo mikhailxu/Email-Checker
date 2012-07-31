@@ -22,8 +22,10 @@ float:left;
 clear:right;
 }
 input[type=submit]{
+width:100px;
 clear:both;
 cursor:pointer;
+margin-left:185px;
 }
 #masterwrapper{
 float:center;
