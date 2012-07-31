@@ -1,0 +1,39 @@
+/*permutations.php */
+#masterwrapper{
+margin-left:200px;
+margin-right:200px
+}
+.title{
+font-family:"Helvetica Neue",Helvetica,Arial,Verdana,Tahoma,"DejaVu Sans",sans-serif;
+font-size:50px;
+color:#0D2C48;
+margin-bottom:10px;
+}
+div.inner{
+float:left;
+clear:left;
+width: 130px;
+color:#0D2C48;
+font-weight:bold;
+font-family:"Helvetica Neue",Helvetica,Arial,Verdana,Tahoma,"DejaVu Sans",sans-serif;
+}
+input{
+float:left;
+clear:right;
+}
+input[type=submit]{
+clear:both;
+cursor:pointer;
+}
+#masterwrapper{
+float:center;
+}
+/*emailcheck.php*/
+form div{
+float:left;
+clear:left;
+}
+form input{
+float:left;
+clear:right;
+}
