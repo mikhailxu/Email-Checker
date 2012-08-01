@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.9.0" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
+ <name>File_CSV_DataSource</name>
+ <channel>pear.php.net</channel>
+ <summary>Simple data access object for csv files in php5.</summary>
+ <description>Simple data access object for csv files in php5.
+
+by Kazuyoshi Tlacaelel.
+
+Takes the data from a csv file and makes it accessable
+through a client-interface.
+
+(NOT a driver of File_CSV) but an independent package.
+Please see the dependencies section for more details.
+
+http://code.google.com/p/php-csv-parser/
+
+INSTALL:
+
+$ sudo pear install --force file_csv_datasource</description>
+ <lead>
+  <name>Kazuyoshi Tlacaelel</name>
+  <user>ktlacaelel</user>
+  <email>kazu.dev@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-02-08</date>
+ <time>20:01:39</time>
+ <version>
+  <release>1.0.1</release>
+  <api>1.0.1</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://www.opensource.org/licenses/mit-license.php">MIT</license>
+ <notes>
+first stable release
+ </notes>
+ <contents>
+  <dir name="/">
+   <file baseinstalldir="File/CSV/" md5sum="c2385b35c7c480eb469a0e70527be066" name="DataSource.php" role="php" />
+   <file baseinstalldir="File_CSV_DataSource/tests/.File_CSV_DataSourceTest.php.swp" md5sum="018975b0307623d01c261efea38cd705" name="tests/.File_CSV_DataSourceTest.php.swp" role="test" />
+   <file baseinstalldir="File_CSV_DataSource/tests/data/another_symmetric.csv" md5sum="09a35f28f04b51776134f16384a99329" name="tests/data/another_symmetric.csv" role="test" />
+   <file baseinstalldir="File_CSV_DataSource/tests/data/asymmetric.csv" md5sum="f41f8e0eb7eaf4157ca9c7d57f0eef8e" name="tests/data/asymmetric.csv" role="test" />
+   <file baseinstalldir="File_CSV_DataSource/tests/data/empty.csv" md5sum="d41d8cd98f00b204e9800998ecf8427e" name="tests/data/empty.csv" role="test" />
+   <file baseinstalldir="File_CSV_DataSource/tests/data/escape_ng.csv" md5sum="416cba0c90268e46b743a489ab84ed4c" name="tests/data/escape_ng.csv" role="test" />
+   <file baseinstalldir="File_CSV_DataSource/tests/data/escape_ok.csv" md5sum="14f80e41d3b24b8ec445e6de302fac91" name="tests/data/escape_ok.csv" role="test" />
+   <file baseinstalldir="File_CSV_DataSource/tests/data/longer_headers.csv" md5sum="fb18276f65433eb2485dddf5f034d09b" name="tests/data/longer_headers.csv" role="test" />
+   <file baseinstalldir="File_CSV_DataSource/tests/data/multcased.CsV" md5sum="d41d8cd98f00b204e9800998ecf8427e" name="tests/data/multcased.CsV" role="test" />
+   <file baseinstalldir="File_CSV_DataSource/tests/data/non_csv_extension.txt" md5sum="d41d8cd98f00b204e9800998ecf8427e" name="tests/data/non_csv_extension.txt" role="test" />
+   <file baseinstalldir="File_CSV_DataSource/tests/data/one_row_only.csv" md5sum="b282d9f61f8444d101d92c50705aa1bd" name="tests/data/one_row_only.csv" role="test" />
+   <file baseinstalldir="File_CSV_DataSource/tests/data/only_headers.csv" md5sum="c55816ab61248b6b5a7ba3448e9e5384" name="tests/data/only_headers.csv" role="test" />
+   <file baseinstalldir="File_CSV_DataSource/tests/data/raw.csv" md5sum="2d685671e2241dea99e14dcba117e165" name="tests/data/raw.csv" role="test" />
+   <file baseinstalldir="File_CSV_DataSource/tests/data/symmetric.csv" md5sum="9f5ff6ff83be3a0eac91db8e06c8fb06" name="tests/data/symmetric.csv" role="test" />
+   <file baseinstalldir="File_CSV_DataSource/tests/data/symmetric_with_empty_lines.csv" md5sum="74b383c1c4bbde61dc1e93f36565bc78" name="tests/data/symmetric_with_empty_lines.csv" role="test" />
+   <file baseinstalldir="File_CSV_DataSource/tests/data/symmetric_with_empty_records.csv" md5sum="56de44ebc2e1dc8b43fdec3538c24832" name="tests/data/symmetric_with_empty_records.csv" role="test" />
+   <file baseinstalldir="File_CSV_DataSource/tests/data/symmetric_with_trailing_spaces.csv" md5sum="ad7668bc22948a64f1e34844c03ab6ca" name="tests/data/symmetric_with_trailing_spaces.csv" role="test" />
+   <file baseinstalldir="File_CSV_DataSource/tests/data/uppercased.CSV" md5sum="d41d8cd98f00b204e9800998ecf8427e" name="tests/data/uppercased.CSV" role="test" />
+   <file baseinstalldir="File_CSV_DataSource/tests/File_CSV_DataSourceTest.php" md5sum="3df7e4df7c2af808693098f8c9e56058" name="tests/File_CSV_DataSourceTest.php" role="test" />
+   <file baseinstalldir="File_CSV_DataSource/tests/fixtures/csv.php" md5sum="102892354f662afe8404068c7c6a5e12" name="tests/fixtures/csv.php" role="test" />
+   <file baseinstalldir="File_CSV_DataSource/docs/examples/documentation.wiki" md5sum="453bf3ea03cbc1fea1993c2b7622e55f" name="docs/examples/documentation.wiki" role="doc" />
+   <file baseinstalldir="File_CSV_DataSource/docs/examples/EXAMPLES" md5sum="e0efc63814a4711a3df6ff4e82dcd5b7" name="docs/examples/EXAMPLES" role="doc" />
+   <file baseinstalldir="File_CSV_DataSource/docs/LICENSE" md5sum="696e8fb6aaa950b49f232f2b498d4b9e" name="docs/LICENSE" role="doc" />
+   <file baseinstalldir="File_CSV_DataSource/docs/README" md5sum="30dd5559e991b5b55fbb072ad48756b8" name="docs/README" role="doc" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.0.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.7.2</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+</package>
