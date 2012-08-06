@@ -33,7 +33,10 @@
 	$emailstr=$fname[0].$lname.'@'.$domain;
    array_push($emails,$emailstr);
 	//mikex@evensale.com
-   $emailstr=$fname.'.'.$lname[0].'@'.$domain;
+   $emailstr=$fname.$lname[0].'@'.$domain;
+   array_push($emails,$emailstr);
+	//m.xu@evensale.com
+   $emailstr=$fname[0].'.'.$lname.'@'.$domain;
    array_push($emails,$emailstr);
 	//xumike@evensale.com
 	$emailstr=$lname.$fname.'@'.$domain;

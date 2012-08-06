@@ -10,7 +10,7 @@
 	$csv = new File_CSV_DataSource;
 	$csv->load("csv/test.csv");
 	$csv = $csv->getRawArray();
-	for ($i = 1; $i <= count($csv); $i++) {
+	for ($i = 1; $i < count($csv); $i++) {
 	// the email to validate
 		$row = $csv[$i];
 		$emails = array();
@@ -21,6 +21,12 @@
 		//mike@evensale.com
 		$emailstr=$fname.'@'.$domain;
 		array_push($emails,$emailstr);
+		//mxu@evensale.com
+		$emailstr=$fname[0].$lname.'@'.$domain;
+		array_push($emails,$emailstr);
+		//mikex@evensale.com
+		$emailstr=$fname.'.'.$lname[0].'@'.$domain;
+		array_push($emails,$emailstr);
 		//mikexu@evensale.com
 		$emailstr=$fname.$lname.'@'.$domain;
 		array_push($emails,$emailstr);
@@ -30,14 +36,11 @@
 		//mike.xu@evensale.com
 		$emailstr=$fname.'.'.$lname.'@'.$domain;
 		array_push($emails,$emailstr);
+		//mikex@evensale.com
+		$emailstr=$fname[0].'.'.$lname.'@'.$domain;
+		array_push($emails,$emailstr);
 		//mike-xu@evensale.com
 		$emailstr=$fname.'-'.$lname.'@'.$domain;
-		array_push($emails,$emailstr);
-		//mxu@evensale.com
-		$emailstr=$fname[0].$lname.'@'.$domain;
-		array_push($emails,$emailstr);
-		//mikex@evensale.com
-		$emailstr=$fname.'.'.$lname[0].'@'.$domain;
 		array_push($emails,$emailstr);
 		//xumike@evensale.com
 		$emailstr=$lname.$fname.'@'.$domain;
@@ -62,6 +65,7 @@
 		$results = $SMTP_Validator->validate($emails, $sender);
 
 		// view results
+		echo '<div style="border:1px solid blue;">';
 		foreach($results as $email=>$result) {
 			// send email? 
 		  if ($result) {
@@ -70,5 +74,6 @@
 				echo 'The email address '. $email.' is <span style="color:red;">not valid</span></br>';
 		  }
 		}
+		echo '</div>';
 	}
 ?>
