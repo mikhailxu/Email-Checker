@@ -18,6 +18,8 @@
 		$mname = $row[1];
 		$lname = $row[2];
 		$domain = $row[3];
+		$domain=(parse_url($domain));
+   	$domain=$domain[host];
 		//mike@evensale.com
 		$emailstr=$fname.'@'.$domain;
 		array_push($emails,$emailstr);

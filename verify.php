@@ -8,6 +8,8 @@
 	$mname=$_POST["mname"];
 	$lname=$_POST["lname"];
 	$domain=$_POST["domain"];
+	$domain=(parse_url($domain));
+	$domain=$domain[host];
 	$emailstr="";
 	// include SMTP Email Validation Class
 	require_once('smtp_validateEmail.class.php');
@@ -56,7 +58,7 @@
 	// instantiate the class
 	$SMTP_Validator = new SMTP_validateEmail();
 	// turn on debugging if you want to view the SMTP transaction
-	$SMTP_Validator->debug = false;
+	$SMTP_Validator->debug = true;
 	// do the validation
 	$results = $SMTP_Validator->validate($emails, $sender);
 
